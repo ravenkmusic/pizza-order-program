@@ -19,10 +19,10 @@ if add_pepperoni == "y":
   if size == "s":
     bill += 2
   else:
-    bill+3
+    bill +=3
   
 if extra_cheese == "y":
   bill += 1
-  
+
 else:
     print(f"Your final bill is ${bill}.")
