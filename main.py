@@ -13,12 +13,14 @@ if size == "s":
     bill += 2 
 if size == "m":
   bill = 20
-  if add_pepperoni == "y":
-    bill += 3
+elif add_pepperoni == "y":
+  bill += 3
 if size =="l":
-  if add_pepperoni == "y":
-    bill += 3
-  bill = 25
+    bill = 25
+elif add_pepperoni == "y":
+  bill += 3
+else:
+  print(f"Your final bill is: ${bill}.")
 
 if extra_cheese == "y":
   bill += 1
