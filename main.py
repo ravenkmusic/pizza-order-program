@@ -19,11 +19,7 @@ if size =="l":
     bill = 25
 elif add_pepperoni == "y":
   bill += 3
-else:
-  print(f"Your final bill is: ${bill}.")
-
 if extra_cheese == "y":
   bill += 1
-
 else:
-  print(f"Your final bill is: ${bill}")
+  print(f"Your final bill is: ${bill}.")
