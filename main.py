@@ -7,15 +7,21 @@ extra_cheese = input("Do you want extra cheese? Y or N ")
 
 #Write your code below this line 👇
 
-s = 15
-m = 20
-l = 25
+if size == "s":
+  bill = 15
+  if add_pepperoni == "y":
+    bill += 2 
+if size == "m":
+  bill = 20
+  if add_pepperoni == "y":
+    bill += 3
+if size =="l":
+  if add_pepperoni == "y":
+    bill += 3
+  bill = 25
 
-if size == 15:
-  print("A small pizza is $15.")
-if size == 20:
-  print("A medium pizza is $20.")
-if size == 25:
-  print("A large pizza is $25.")
+if extra_cheese == "y":
+  bill += 1
+
 else:
-  print("We don't have that.")
+  print(f"Your final bill is: ${bill}")
