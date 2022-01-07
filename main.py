@@ -24,5 +24,4 @@ if add_pepperoni == "y":
 if extra_cheese == "y":
   bill += 1
 
-else:
-    print(f"Your final bill is ${bill}.")
+print(f"Your final bill is ${bill}.")
